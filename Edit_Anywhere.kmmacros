@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>476798076.18930799</real>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>Comment</string>
+						<key>Text</key>
+						<string>If you want to change where the temporary file is stored, edit the EDIT_ANYWHERE_FILE variable.
+
+Note that the filename (and path, if any) will be relative to your $HOME. So, for example, if you want to use a file named ~/Dropbox/txt/my-very-special-name-here.txt then you should set the variable to "Dropbox/txt/my-very-special-name-here.txt"
+
+Do NOT include the /Users/YourNameHere/ part of the path, that will be added automatically later.
+
+Do not change the variable name (EDIT_ANYWHERE_FILE) just change the part in the "To:" field.
+
+</string>
+						<key>Title</key>
+						<string>Note: You can customize 'EDIT_ANYWHERE_FILE'</string>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>edit_anywhere.txt</string>
+						<key>Variable</key>
+						<string>EDIT_ANYWHERE_FILE</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Store to the name of the active application to the variable ‘EditAnywhereApp’</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>SetVariableToText</string>
+						<key>Text</key>
+						<string>%Application%1%</string>
+						<key>Variable</key>
+						<string>EditAnywhereApp</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Type the ⌘A Keystroke (This should trigger 'Select All Text')</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>0</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Type the ⌘A Keystroke (This should trigger 'Select All Text')</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>0</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>1</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>7</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Paste</key>
+						<false/>
+						<key>Text</key>
+						<string>(Waiting for EditAnywhere)</string>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Type the ⌘A Keystroke (This should trigger 'Select All Text')</string>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>0</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>256</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>Pause</string>
+						<key>Time</key>
+						<string>.5</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>This is where the magic happens</string>
+						<key>DisplayKind</key>
+						<string>None</string>
+						<key>IncludeStdErr</key>
+						<true/>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ExecuteShellScript</string>
+						<key>Path</key>
+						<string>/usr/local/scripts/km-edit-anywhere-any-editor.sh</string>
+						<key>Text</key>
+						<string>#!/bin/zsh -f
+
+
+	## This is the app that you want to use as your external editor
+	## Note that it should not include the '.app' suffix
+	##
+	## Examples:
+	## 	APP='BBEdit'
+	## 	APP='TextWrangler'
+	## 	APP='MultiMarkdown Composer'
+	##      APP='Emacs'
+	##
+APP='Emacs'
+
+	## OS X no longer has a good way to ensure that GUI apps like
+	## Keyboard Maestro have access to your $PATH so I often just create
+	## a text file in my $HOME which I can use in all my scripts. This
+	## checks to see if that file exists, and if it does not exist, it
+	## will use the PATH as defined in the second half of the if/else
+
+if [[ -e "$HOME/.path" ]]
+then
+	source "$HOME/.path"
+else
+	PATH=/usr/local/scripts:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin
+fi
+
+
+
+
+####|####|####|####|####|####|####|####|####|####|####|####|####|####|####
+#
+#		You should not ~need~ to edit anything below this line
+#
+
+
+	######################################################################
+	## This is the name of the temporary file which will be used to keep
+	## your edits before it is sent back to the app where it came from.
+	##
+	## This is now based on a variable set in the Keyboard Maestro macro
+	##
+
+	## If, for some reason, the filename is NOT set, use a reasonable default
+[[ "$KMVAR_EDIT_ANYWHERE_FILE" == "" ]] &amp;&amp; KMVAR_EDIT_ANYWHERE_FILE='edit_anywhere.txt'
+
+	## Try to protect against someone putting '..' in the file path and
+	## attempting to get out of the $HOME I don't know if this is
+	## actually necessary, but once it occurred to me, I figured I might
+	## as well add it.
+FILE=`echo "${HOME}/${KMVAR_EDIT_ANYWHERE_FILE}" | tr -s '.' '.'`
+
+
+NAME="[Edit Anywhere via Keyboard Maestro]"
+
+	## Change this if necessary
+	## Used for pbcopy and pbpaste
+LANG=en_US.UTF-8
+
+zmodload zsh/datetime ## needed for strftime
+
+function timestamp { strftime "%Y-%m-%d--%H.%M.%S" "$EPOCHSECONDS" }
+
+	# This gives us a unique reference point for when the script was launched
+TIME=`strftime "%Y-%m-%d--%H.%M.%S" "$EPOCHSECONDS"`
+
+
+if (( $+commands[growlnotify] ))
+then
+		## We found the growlnotify tool installed
+	GROWLNOTIFY_FOUND='yes'
+
+		## We only check to see if Growl.app is running IFF we have
+		## found growlnotify because otherwise there's no point caring.
+
+	if [ "`pgrep -x Growl`" = "" ]
+	then
+			## Growl is NOT running
+		GROWL_RUNNING='no'
+	else
+			## Growl IS running
+		GROWL_RUNNING='yes'
+	fi
+
+else
+		## We did NOT find the growlnotify tool installed
+	GROWLNOTIFY_FOUND='no'
+
+		## We just set this to 'no' because it doesn't matter, if the
+		## growlnotify tool isn't found too.
+	GROWL_RUNNING='no'
+fi
+
+
+if [ "$GROWL_RUNNING" = "yes" -a "$GROWLNOTIFY_FOUND" = "yes" ]
+then
+	## If growlnotify is installed AND Growl.app is running, use Growl for notifications
+
+	function msg
+	{
+		growlnotify \
+		--appIcon "$APP" \
+		--identifier "$NAME" \
+		--message "$@" \
+		--title "$NAME"
+
+	} ## end of msg/growl
+
+
+elif (( $+commands[terminal-notifier] ))
+then
+	## OTHERWISE, use terminal-notifier for notifications, if it is installed.
+
+	function msg
+	{
+		if [[ -e "/Applications/$APP.app/Contents/Info.plist" ]]
+		then
+				## If there is an app plist where we'd expect it to be, try to get the Bundle identifier from it
+
+			TN_BUNDLE_ID=`defaults read /Applications/${APP}.app/Contents/Info CFBundleIdentifier`
+		fi
+
+				## If we were not able to get a bundle ID, use Keyboard Maestro's
+		[[ "$TN_BUNDLE_ID" == "" ]] &amp;&amp; TN_BUNDLE_ID='com.stairways.keyboardmaestro.editor'
+
+		terminal-notifier \
+			-title "$NAME" \
+			-subtitle "`timestamp`" \
+			-group "$NAME" \
+			-sender "$TN_BUNDLE_ID" \
+			-activate "$TN_BUNDLE_ID" \
+			-message "$@"
+	} ## end of msg/terminal-notifier
+
+else
+
+	function msg { echo "$NAME: $@" | tee -a "${TMPDIR-/tmp/}${NAME}.$TIME.log" }
+
+fi
+
+
+###########################################################################################
+###########################################################################################
+##
+## Here is where the action begins
+##
+
+	## What do we do if they asked for a path which does not exist?
+	## Well, we will try to create the folder and then paste the file in there
+PARENT_DIR="$FILE:h"
+
+[[ ! -d "$PARENT_DIR" ]] &amp;&amp; mkdir -p "$PARENT_DIR" &amp;&amp; msg "Created $PARENT_DIR for $FILE"
+
+if [[ -e "$FILE" ]]
+then
+	pbpaste &gt;&gt; "$FILE"
+else
+	pbpaste &gt; "$FILE"
+fi
+
+EXIT="$?"
+
+if [ "$EXIT" != "0" ]
+then
+
+	msg "FATAL ERROR: Failed to create file at $FILE. Exit = $EXIT. Sorry."
+
+		## if we can't create the file, send the contents of the
+		## pasteboard to a temp file in TextEdit at least so the user
+		## will not lose whatever they had there at least
+	/usr/bin/pbpaste | /usr/bin/open -e -f
+
+	exit 1
+fi
+
+
+if [[ "$KMVAR_EditAnywhereApp" == "" ]]
+then
+	## "$KMVAR_EditAnywhereApp" is not set. ABORT.
+
+	msg "Variable KMVAR_EditAnywhereApp is empty. Giving up."
+
+		## Open the file in the default text editor
+		## so the user knows their text has not been lost
+	/usr/bin/open -t "$FILE"
+
+	exit 1
+
+else
+		## Tell the user what app we took text from
+		## This is mostly a debugging comment and could be removed if it annoys you
+	msg "Will send text back to: $KMVAR_EditAnywhereApp"
+
+fi
+
+
+if (( $+commands[bbedit] ))
+then
+		## We found the command line bbedit tool
+	CL_BBEDIT='yes'
+else
+		## We did NOT find the command line bbedit tool
+	CL_BBEDIT='no'
+fi
+
+
+
+if [[ "$CL_BBEDIT" = "yes" &amp;&amp; "$APP:l" == "bbedit" ]]
+then
+		## IFF the user wants to use BBEdit and they have the bbedit
+		## command line tool installed, then we will use the bbedit tool
+
+		## if BBEdit is not running, launch it
+	pgrep -xq BBEdit || (open -a BBEdit &amp;&amp; sleep 3)
+
+		## We will try to open the app with the bbedit command,
+		## but if it fails we will open TextEdit
+	bbedit \
+		--language 'Markdown' \
+		--create-unix \
+		--new-window \
+		--resume \
+		--wait \
+		-- "$FILE" \
+	 || open -n -e -W "$FILE"
+
+else
+		## if we get here, either the app is NOT BBEdit
+		## or they do not have the `bbedit` tool installed
+
+		## We will try to open the file in the requested app
+		## but if the open command fails for some reason,
+		## we will open TextEdit
+
+		if [[ "$APP:l" == "emacs" ]]
+		then
+		    /Applications/Emacs.app/Contents/MacOS/bin/emacsclient "$FILE"
+		else
+			open -a "$APP" -n -W "$FILE" || open -n -e -W "$FILE"
+		fi
+
+
+fi # if app is BBEdit
+
+
+EXIT="$?"
+
+if [ "$EXIT" != "0" ]
+then
+
+	## If we get here, something went wrong
+
+	msg "Unable to open $FILE in $APP."
+
+		## Show the file in the Finder, so the user can try to do something with it
+	/usr/bin/open -R "$FILE"
+
+	exit 1
+fi
+
+## If we get here, `open` or `bbedit` exited successfully
+
+
+	## Make sure that the app we want to paste into is actually running
+	## it *should* be, but it's possible that it either crashed or the
+	## user quit it in the interim, so let's check
+
+pgrep -xq "$KMVAR_EditAnywhereApp"
+
+EXIT="$?"
+
+if [ "$EXIT" = "1" ]
+then
+
+		## If we get here, the app is NOT running, so let's tell the user
+		## that we are launching it.
+
+	msg "Launching $KMVAR_EditAnywhereApp so we can paste to it"
+
+
+		## Here is where we actually launch the app
+	open -a "$KMVAR_EditAnywhereApp"
+
+		## now we need to give it a few seconds to get itself running
+		## This is guesswork, because we don't know how long it will
+		## take for the app to launch and be ready to accept input
+	sleep 5
+fi
+
+		## Tell the user we are ready to paste information back to the source app
+	msg "Pasting text to $KMVAR_EditAnywhereApp"
+
+	## Activate the app
+	## NOTE: originally this was not happening fast enough
+	## for it to be ready to accept a 'paste'
+	## when this script finished
+	## so I added some extra 'padding'
+	## and an extra 'open' call
+	## This should not harm anything.
+
+open -a "$KMVAR_EditAnywhereApp"
+
+	## wait a second
+sleep 1
+
+	## No no, REALLY activate the app
+open -a "$KMVAR_EditAnywhereApp"
+
+
+	## copy the file back to the pasteboard
+pbcopy &lt; "$FILE"
+
+	## OK, now we are done with the FILE so we have to either leave it there,
+	## 	delete it, or move it to the trash.
+	## I don't want to leave it there when it has already been used,
+	##	and I don't want to delete it in case something went wrong
+	## So I'm going to move it to the trash instead
+	## AND I'm going to rename the file with the current time stamp so if I
+	## happen to have several of these and need to recover one,
+	## I can do that, as long as I haven't emptied my trash
+
+		## This will be 'edit_anywhere' without the path or extension
+		## unless you changed $FILE
+	SHORT="$FILE:t:r"
+
+		## This will be 'txt' unless you changed $FILE
+	EXT="$FILE:e"
+
+/bin/mv -n "$FILE" "$HOME/.Trash/$SHORT.`timestamp`.$EXT"
+
+exit 0
+#EOF
+</string>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+						<key>TimeOutPeriod</key>
+						<real>86400</real>
+						<key>TrimResults</key>
+						<true/>
+						<key>TrimResultsNew</key>
+						<true/>
+						<key>UseText</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>ActionName</key>
+						<string>Paste contents of file back to "Source" app</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Menu</string>
+									<key>MenuConditionSelectionType</key>
+									<string>Is</string>
+									<key>MenuConditionType</key>
+									<string>IsEnabled</string>
+									<key>MenuModifiers</key>
+									<integer>256</integer>
+									<key>MenuShortcut</key>
+									<string>C</string>
+									<key>MenuTitle</key>
+									<string>Paste</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActions</key>
+						<array>
+							<dict>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>KeyCode</key>
+								<integer>9</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>256</integer>
+								<key>ReleaseAll</key>
+								<false/>
+							</dict>
+						</array>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>SelectMenuItem</string>
+								<key>Menu</key>
+								<array>
+									<string>Edit</string>
+									<string>Paste</string>
+								</array>
+								<key>TargetingType</key>
+								<string>Front</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>459387347.72605699</real>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>476804756.07874298</real>
+				<key>Name</key>
+				<string>Edit Anywhere</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>111</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>6912</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>63DA32F6-8BA8-49AD-B4BC-C9AC7761D87E</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>0F5E354C-86D1-4177-A4AB-BC6F72E6C0AF</string>
+		<key>UID</key>
+		<string>C0F6CACC-31B4-4967-A63A-5C0705C45EC9</string>
+	</dict>
+</array>
+</plist>

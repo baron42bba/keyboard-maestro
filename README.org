@@ -1,0 +1,22 @@
+#+TITLE:  Readme
+#+AUTHOR: Andreas Gerler
+#+EMAIL:  baron@bundesbrandschatzamt.de
+#+DATE:   2016 Feb 11
+
+* Overview
+
+This is my collection of [[http://www.keyboardmaestro.com][Keyboard Maestro]] macros.
+
+* Macros
+** [[file:Edit_Anywhere.kmmacros][Edit_Anywhere]]
+
+copied from https://github.com/tjluoma/edit-anywhere.git.
+Added support for Emacs.
+
+** [[file:screen-start-ssh-to-clipboard.kmmacros][screen-start-ssh-to-clipboard]]
+
+A small macro to bring iTerm2 to front. Assumed running GNU
+Screen. Open a new tab and ssh to what's in clipboard.
+I have a small Emacs function calling this macro.
+That way I can open a connection outside of Emacs. Something I still
+occasionally do.
