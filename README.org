@@ -20,3 +20,24 @@ Screen. Open a new tab and ssh to what's in clipboard.
 I have a small Emacs function calling this macro.
 That way I can open a connection outside of Emacs. Something I still
 occasionally do.
+
+** Keypad Mac bindings
+[2016-02-13 Sat 11:45]
+
+Even though I love my [[http://www.pckeyboard.com/page/category/EnduraPro][UNICOMP Keyboards]] they lack the /fn/ keys for
+Apple. These macros bring some of the functionality to /cmd/ plus
+keypad number.
+
+*** [[keypad-0-system-volume-mute-toggle.kmmacros][keypad-0-system-volume-mute-toggle]]
+[2016-02-13 Sat 11:42]
+
+
+
+*** [[keypad-1-system-volume-down.kmmacros][keypad-1-system-volume-down]]
+[2016-02-13 Sat 11:44]
+
+*** [[keypad-2-system-volume-up.kmmacros][keypad-2-system-volume-up]]
+[2016-02-13 Sat 11:44]
+
+*** [[keypad-5-itunes-pause.kmmacros][keypad-5-itunes-pause]]
+[2016-02-13 Sat 11:44]
