@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>476798076.18930799</real>
+		<key>IsActive</key>
+		<true/>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>AllWindows</key>
+						<true/>
+						<key>AlreadyActivatedActionType</key>
+						<string>Normal</string>
+						<key>Application</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>org.gnu.Emacs</string>
+							<key>Name</key>
+							<string>Emacs</string>
+							<key>NewFile</key>
+							<string>/Applications/Emacs.app</string>
+						</dict>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>ActivateApplication</string>
+						<key>ReopenWindows</key>
+						<false/>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>0.0</real>
+				<key>IsActive</key>
+				<true/>
+				<key>ModificationDate</key>
+				<real>477846651.72064</real>
+				<key>Name</key>
+				<string>switch-to-emacs</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>FireType</key>
+						<string>Pressed</string>
+						<key>KeyCode</key>
+						<integer>114</integer>
+						<key>MacroTriggerType</key>
+						<string>HotKey</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>26BC1C42-6EAA-4A58-A7F4-189D97181A1E</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>0F5E354C-86D1-4177-A4AB-BC6F72E6C0AF</string>
+		<key>UID</key>
+		<string>C0F6CACC-31B4-4967-A63A-5C0705C45EC9</string>
+	</dict>
+</array>
+</plist>

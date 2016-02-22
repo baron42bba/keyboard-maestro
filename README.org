@@ -47,3 +47,7 @@ keypad number.
 
 I don't have power button on my [[http://www.pckeyboard.com/page/category/EnduraPro][UNICOMP Keyboards]] but my muscle memory
 is trained for ctrl ESC anyway since my Linux Desktop days.
+
+** [[switch-to-emacs.kmmacros][switch-to-emacs]]
+[2016-02-22 Mon 17:21]
+Use Insert Key to switch instantly to Emacs.
