@@ -41,3 +41,9 @@ keypad number.
 
 *** [[keypad-5-itunes-pause.kmmacros][keypad-5-itunes-pause]]
 [2016-02-13 Sat 11:44]
+
+** [[lock-screen.kmmacros][lock-screen]]
+[2016-02-22 Mon 15:09]
+
+I don't have power button on my [[http://www.pckeyboard.com/page/category/EnduraPro][UNICOMP Keyboards]] but my muscle memory
+is trained for ctrl ESC anyway since my Linux Desktop days.
