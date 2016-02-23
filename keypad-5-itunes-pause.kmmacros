@@ -111,6 +111,16 @@
 								<string>Specific</string>
 							</dict>
 							<dict>
+								<key>HonorExcluded</key>
+								<true/>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>HideCurrent</string>
+							</dict>
+							<dict>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -130,7 +140,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>477839831.74918801</real>
+				<real>477931491.31646299</real>
 				<key>Name</key>
 				<string>keypad-5-itunes-pause</string>
 				<key>Triggers</key>
