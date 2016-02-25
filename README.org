@@ -51,3 +51,7 @@ is trained for ctrl ESC anyway since my Linux Desktop days.
 ** [[switch-to-emacs.kmmacros][switch-to-emacs]]
 [2016-02-22 Mon 17:21]
 Use Insert Key to switch instantly to Emacs.
+
+** [[switch-to-iterm.kmmacros][switch-to-iterm]]
+[2016-02-25 Thu 10:50]
+Use CMD + Insert Key to switch instantly to iterm.

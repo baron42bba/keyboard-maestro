@@ -95,8 +95,8 @@
 								<string>SelectMenuItem</string>
 								<key>Menu</key>
 								<array>
-									<string>Wiedergabe</string>
-									<string>Abspielen</string>
+									<string>Playback</string>
+									<string>Play</string>
 								</array>
 								<key>TargetApplication</key>
 								<dict>
@@ -140,7 +140,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>477931491.31646299</real>
+				<real>478016867.90712601</real>
 				<key>Name</key>
 				<string>keypad-5-itunes-pause</string>
 				<key>Triggers</key>
