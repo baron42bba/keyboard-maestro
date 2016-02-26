@@ -55,3 +55,6 @@ Use Insert Key to switch instantly to Emacs.
 ** [[switch-to-iterm.kmmacros][switch-to-iterm]]
 [2016-02-25 Thu 10:50]
 Use CMD + Insert Key to switch instantly to iterm.
+** [[iterm-launches.kmmacros][iterm-launches]]
+[2016-02-26 Fri 16:20]
+After iTerm launches check network and do the every morning task.
