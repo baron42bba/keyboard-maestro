@@ -53,11 +53,11 @@
 					</dict>
 					<dict>
 						<key>Action</key>
-						<string>MoveWindowTo</string>
+						<string>MoveAndResize</string>
 						<key>HeightExpression</key>
-						<string>300</string>
+						<string>SCREENVISIBLE(Main,Height)</string>
 						<key>HorizontalExpression</key>
-						<string>0</string>
+						<string>SCREENVISIBLE(Main,Left)</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -78,44 +78,9 @@
 						<key>TargetingType</key>
 						<string>Specific</string>
 						<key>VerticalExpression</key>
-						<string>23</string>
+						<string>SCREENVISIBLE(Main,Top)</string>
 						<key>WidthExpression</key>
-						<string>300</string>
-						<key>WindowIndexExpression</key>
-						<string>2</string>
-						<key>WindowName</key>
-						<string></string>
-					</dict>
-					<dict>
-						<key>Action</key>
-						<string>ResizeWindowTo</string>
-						<key>HeightExpression</key>
-						<string>300</string>
-						<key>HorizontalExpression</key>
-						<string>1914</string>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
-						<key>MacroActionType</key>
-						<string>ManipulateWindow</string>
-						<key>TargetApplication</key>
-						<dict>
-							<key>BundleIdentifier</key>
-							<string>com.googlecode.iterm2</string>
-							<key>Name</key>
-							<string>iTerm</string>
-							<key>NewFile</key>
-							<string>/Applications/iTerm.app</string>
-						</dict>
-						<key>Targeting</key>
-						<string>FrontWindow</string>
-						<key>TargetingType</key>
-						<string>Specific</string>
-						<key>VerticalExpression</key>
-						<string>1053</string>
-						<key>WidthExpression</key>
-						<string>300</string>
+						<string>SCREENVISIBLE(Main,Width)</string>
 						<key>WindowIndexExpression</key>
 						<string>2</string>
 						<key>WindowName</key>
@@ -165,19 +130,60 @@
 						<false/>
 					</dict>
 					<dict>
-						<key>Action</key>
-						<string>ByTyping</string>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Script</string>
+									<key>Path</key>
+									<string></string>
+									<key>ScriptConditionSourceType</key>
+									<string>ShellScriptText</string>
+									<key>ScriptConditionType</key>
+									<string>ReturnsSuccess</string>
+									<key>ScriptResult</key>
+									<string></string>
+									<key>ScriptTerminationStatus</key>
+									<integer>1</integer>
+									<key>ScriptText</key>
+									<string>grep -q 'SYSENV=work' ~/.bashrc</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
 						<true/>
 						<key>MacroActionType</key>
-						<string>InsertText</string>
-						<key>Paste</key>
-						<false/>
-						<key>Text</key>
-						<string>cd ~/git/sm	/puppet
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>ByTyping</string>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>InsertText</string>
+								<key>Paste</key>
+								<false/>
+								<key>Text</key>
+								<string>cd ~/git/sm	/puppet
 </string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>IsActive</key>
@@ -206,6 +212,62 @@
 						<integer>0</integer>
 						<key>ReleaseAll</key>
 						<false/>
+					</dict>
+					<dict>
+						<key>Conditions</key>
+						<dict>
+							<key>ConditionList</key>
+							<array>
+								<dict>
+									<key>ConditionType</key>
+									<string>Script</string>
+									<key>Path</key>
+									<string></string>
+									<key>ScriptConditionSourceType</key>
+									<string>ShellScriptText</string>
+									<key>ScriptConditionType</key>
+									<string>ReturnsSuccess</string>
+									<key>ScriptResult</key>
+									<string></string>
+									<key>ScriptTerminationStatus</key>
+									<integer>1</integer>
+									<key>ScriptText</key>
+									<string>grep -q 'SYSENV=work' ~/.bashrc</string>
+								</dict>
+							</array>
+							<key>ConditionListMatch</key>
+							<string>All</string>
+						</dict>
+						<key>ElseActionListDisclosed</key>
+						<false/>
+						<key>ElseActions</key>
+						<array/>
+						<key>IsActive</key>
+						<true/>
+						<key>IsDisclosed</key>
+						<true/>
+						<key>MacroActionType</key>
+						<string>IfThenElse</string>
+						<key>ThenActions</key>
+						<array>
+							<dict>
+								<key>Action</key>
+								<string>ByTyping</string>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<true/>
+								<key>MacroActionType</key>
+								<string>InsertText</string>
+								<key>Paste</key>
+								<false/>
+								<key>Text</key>
+								<string>cd ~/git/sm	/puppet-hiera
+</string>
+							</dict>
+						</array>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
 					</dict>
 					<dict>
 						<key>Conditions</key>
@@ -301,7 +363,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>478192402.93063599</real>
+				<real>480501539.72901201</real>
 				<key>Name</key>
 				<string>iterm-launches</string>
 				<key>Triggers</key>

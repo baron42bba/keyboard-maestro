@@ -58,3 +58,17 @@ Use CMD + Insert Key to switch instantly to iterm.
 ** [[iterm-launches.kmmacros][iterm-launches]]
 [2016-02-26 Fri 16:20]
 After iTerm launches check network and do the every morning task.
+** [[login-items.kmmacros][login-items]]
+[2016-10-21 Fri 16:56]
+Start some processes after Keyboard Maestro. Otherwise macros like
+iterm-launches are not triggered.
+** [[move-window-to-other-screen.kmmacros][move-window-to-other-screen]]
+[2016-10-21 Fri 16:57]
+Send the active window to the second or third screen.
+** [[toggle-pause-youtube-switch-to-emacs.kmmacros][toggle-pause-youtube-switch-to-emacs]]
+[2016-10-21 Fri 16:58]
+This one is nice if you want to take notes from a presentation on
+youtube.
+** [[toggle-maximize-window.kmmacros][toggle-maximize-window]]
+[2016-10-21 Fri 17:00]
+Resize the window via keyboard.
