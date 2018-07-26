@@ -21,6 +21,14 @@ I have a small Emacs function calling this macro.
 That way I can open a connection outside of Emacs. Something I still
 occasionally do.
 
+** [[file:screen-start-cd-to-clipboard.kmmacros][screen-start-cd-to-clipboard]]
+[2018-07-26 Thu 11:10]
+
+Another macro to bring iTerm2 to front. I assume it is running GNU
+screen.
+It opens a new tab and changes directory to what is in the clipboard.
+My Emacs has a some functions to call this macro.
+
 ** Keypad Mac bindings
 [2016-02-13 Sat 11:45]
 

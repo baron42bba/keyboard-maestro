@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Activate</key>
+		<string>Normal</string>
+		<key>CreationDate</key>
+		<real>476798076.18930799</real>
+		<key>Macros</key>
+		<array>
+			<dict>
+				<key>Actions</key>
+				<array>
+					<dict>
+						<key>AllWindows</key>
+						<true/>
+						<key>AlreadyActivatedActionType</key>
+						<string>Normal</string>
+						<key>Application</key>
+						<dict>
+							<key>BundleIdentifier</key>
+							<string>com.googlecode.iterm2</string>
+							<key>Name</key>
+							<string>iTerm</string>
+							<key>NewFile</key>
+							<string>/Applications/iTerm.app</string>
+						</dict>
+						<key>MacroActionType</key>
+						<string>ActivateApplication</string>
+						<key>ReopenWindows</key>
+						<false/>
+						<key>TimeOutAbortsMacro</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>0</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>4096</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>IsDisclosed</key>
+						<false/>
+						<key>KeyCode</key>
+						<integer>8</integer>
+						<key>MacroActionType</key>
+						<string>SimulateKeystroke</string>
+						<key>Modifiers</key>
+						<integer>0</integer>
+						<key>ReleaseAll</key>
+						<false/>
+					</dict>
+					<dict>
+						<key>Action</key>
+						<string>ByTyping</string>
+						<key>MacroActionType</key>
+						<string>InsertText</string>
+						<key>Text</key>
+						<string>cd %CurrentClipboard%
+</string>
+					</dict>
+				</array>
+				<key>CreationDate</key>
+				<real>508764459.80534399</real>
+				<key>ModificationDate</key>
+				<real>508764473.36522198</real>
+				<key>Name</key>
+				<string>screen-start-cd-to-clipboard</string>
+				<key>Triggers</key>
+				<array>
+					<dict>
+						<key>MacroTriggerType</key>
+						<string>StatusMenu</string>
+					</dict>
+				</array>
+				<key>UID</key>
+				<string>5C9312EA-FCC5-49AE-858F-1DAE2C5F706E</string>
+			</dict>
+		</array>
+		<key>Name</key>
+		<string>Global Macro Group</string>
+		<key>ToggleMacroUID</key>
+		<string>0F5E354C-86D1-4177-A4AB-BC6F72E6C0AF</string>
+		<key>UID</key>
+		<string>C0F6CACC-31B4-4967-A63A-5C0705C45EC9</string>
+	</dict>
+</array>
+</plist>
