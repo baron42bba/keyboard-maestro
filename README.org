@@ -49,6 +49,8 @@ keypad number.
 
 *** [[keypad-5-itunes-pause.kmmacros][keypad-5-itunes-pause]]
 [2016-02-13 Sat 11:44]
+*** [[keypad-6-itunes-skip.kmmacros][keypad-6-itunes-skip]]
+[2018-07-26 Thu 11:07]
 
 ** [[lock-screen.kmmacros][lock-screen]]
 [2016-02-22 Mon 15:09]
