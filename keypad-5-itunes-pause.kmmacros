@@ -6,9 +6,7 @@
 		<key>Activate</key>
 		<string>Normal</string>
 		<key>CreationDate</key>
-		<real>476798076.18930799</real>
-		<key>IsActive</key>
-		<true/>
+		<real>554027972.075001</real>
 		<key>Macros</key>
 		<array>
 			<dict>
@@ -26,8 +24,6 @@
 										<string>com.amazon.music</string>
 										<key>Name</key>
 										<string>Amazon Music</string>
-										<key>NewFile</key>
-										<string>/Applications/Amazon Music.app</string>
 									</dict>
 									<key>ApplicationConditionType</key>
 									<string>Running</string>
@@ -45,22 +41,24 @@
 								<string></string>
 								<key>Command</key>
 								<string>PlayPause</string>
-								<key>IsActive</key>
-								<true/>
 								<key>IsDisclosed</key>
 								<false/>
 								<key>MacroActionType</key>
 								<string>iTunesControl</string>
 							</dict>
 						</array>
-						<key>IsActive</key>
-						<true/>
-						<key>IsDisclosed</key>
-						<true/>
 						<key>MacroActionType</key>
 						<string>IfThenElse</string>
 						<key>ThenActions</key>
 						<array>
+							<dict>
+								<key>MacroActionType</key>
+								<string>Pause</string>
+								<key>Time</key>
+								<string>1</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
 							<dict>
 								<key>AllWindows</key>
 								<true/>
@@ -75,10 +73,6 @@
 									<key>NewFile</key>
 									<string>/Applications/Amazon Music.app</string>
 								</dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<true/>
 								<key>MacroActionType</key>
 								<string>ActivateApplication</string>
 								<key>ReopenWindows</key>
@@ -87,33 +81,19 @@
 								<true/>
 							</dict>
 							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
+								<key>Action</key>
+								<string>ByTyping</string>
 								<key>MacroActionType</key>
-								<string>SelectMenuItem</string>
-								<key>Menu</key>
-								<array>
-									<string>Playback</string>
-									<string>Play</string>
-								</array>
+								<string>InsertText</string>
 								<key>TargetApplication</key>
-								<dict>
-									<key>BundleIdentifier</key>
-									<string>com.amazon.music</string>
-									<key>Name</key>
-									<string>Amazon Music</string>
-									<key>NewFile</key>
-									<string>/Applications/Amazon Music.app</string>
-								</dict>
+								<dict/>
 								<key>TargetingType</key>
-								<string>Specific</string>
+								<string>Front</string>
+								<key>Text</key>
+								<string> </string>
 							</dict>
 							<dict>
 								<key>HonorExcluded</key>
-								<true/>
-								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
 								<false/>
@@ -121,8 +101,6 @@
 								<string>HideCurrent</string>
 							</dict>
 							<dict>
-								<key>IsActive</key>
-								<true/>
 								<key>IsDisclosed</key>
 								<false/>
 								<key>MacroActionType</key>
@@ -137,10 +115,8 @@
 				</array>
 				<key>CreationDate</key>
 				<real>477052663.72349399</real>
-				<key>IsActive</key>
-				<true/>
 				<key>ModificationDate</key>
-				<real>478016867.90712601</real>
+				<real>554288402.538872</real>
 				<key>Name</key>
 				<string>keypad-5-itunes-pause</string>
 				<key>Triggers</key>
@@ -163,9 +139,9 @@
 		<key>Name</key>
 		<string>Global Macro Group</string>
 		<key>ToggleMacroUID</key>
-		<string>0F5E354C-86D1-4177-A4AB-BC6F72E6C0AF</string>
+		<string>9ACDFF22-DC7A-419F-9750-1E27AC78CC7D</string>
 		<key>UID</key>
-		<string>C0F6CACC-31B4-4967-A63A-5C0705C45EC9</string>
+		<string>65AEFF0B-612A-440E-95CB-4CEA714EDE35</string>
 	</dict>
 </array>
 </plist>
