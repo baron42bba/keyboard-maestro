@@ -29,6 +29,12 @@ screen.
 It opens a new tab and changes directory to what is in the clipboard.
 My Emacs has a some functions to call this macro.
 
+** [[file:iterm-insert-clipboard.kmmacros][iterm-insert-clipboard]]
+[2018-10-10 Wed 14:33]
+
+Bring iTerm2 to front and insert the current clipboard.
+I use this to execute sql commands from Emacs.
+
 ** Keypad Mac bindings
 [2016-02-13 Sat 11:45]
 
