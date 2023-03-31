@@ -91,3 +91,6 @@ Resize the window via keyboard.
 ** [[meet-companion.kmmacros][meet-companion]]
 [2023-03-31 Fri 17:43]
 Open second window with google meet for campanion mode.
+** [[org-capture.kmmacros][org-capture]]
+[2023-03-31 Fri 17:46]
+Open Emacs window with org-capture.
