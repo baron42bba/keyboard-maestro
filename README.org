@@ -88,3 +88,6 @@ youtube.
 ** [[toggle-maximize-window.kmmacros][toggle-maximize-window]]
 [2016-10-21 Fri 17:00]
 Resize the window via keyboard.
+** [[meet-companion.kmmacros][meet-companion]]
+[2023-03-31 Fri 17:43]
+Open second window with google meet for campanion mode.
