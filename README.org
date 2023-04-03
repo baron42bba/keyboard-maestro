@@ -94,3 +94,6 @@ Open second window with google meet for campanion mode.
 ** [[org-capture.kmmacros][org-capture]]
 [2023-03-31 Fri 17:46]
 Open Emacs window with org-capture.
+** [[switch-audio.kmmacros][switch-audio]]
+[2023-04-03 Mon 11:28]
+switch between monitor and conference output
